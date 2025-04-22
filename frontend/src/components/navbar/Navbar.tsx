@@ -52,12 +52,6 @@ function Navbar() {
                                     <Button fullWidth>
                                         <Link to="/profile"> Profile </Link>
                                     </Button>
-                                    <Button fullWidth>
-                                        <Link to="/profile"> Profile </Link>
-                                    </Button>
-                                    <Button fullWidth>
-                                        <Link to="/profile"> Profile </Link>
-                                    </Button>
                                 </Box>
                             )}
                         </Stack>

@@ -23,46 +23,6 @@ const router = createBrowserRouter([
             { path: "joke/create-joke", element: <CreateJokePage /> },
             { path: "joke/list-jokes", element: <ListJokesPage /> },
             { path: "profile", element: <ProfilePage /> },
-            // {
-            //     path: "characters/:characterId",
-            //     loader: characterDetailLoader,
-            //     element: <CharacterDetail />,
-            //     children: [
-            //         {
-            //             index: true,
-            //             loader: characterCommentsLoader,
-            //             action: characterCommentsAction,
-            //             element: <CharacterComments />,
-            //         },
-            //     ],
-            // },
-            // {
-            //     path: "episodes",
-            //     loader: episodesLoader,
-            //     element: <Episodes />,
-            //     children: [
-            //         { index: true, element: <h1>Choose an episode</h1> },
-            //         {
-            //             path: ":episodeId",
-            //             loader: episodeDetailLoader,
-            //             element: <EpisodeDetail />,
-            //         },
-            //     ],
-            // },
-
-            // {
-            //     path: "locations",
-            //     loader: locationsLoader,
-            //     element: <Locations />,
-            //     children: [
-            //         { index: true, element: <h1>Choose a location</h1> },
-            //         {
-            //             path: ":locationId",
-            //             loader: locationDetailLoader,
-            //             element: <LocationDetail />,
-            //         },
-            //     ],
-            // },
         ],
     },
 ]);
