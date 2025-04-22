@@ -1,13 +1,10 @@
 import { Button, Container, FormControl, InputLabel, MenuItem, Select, TextField, Typography } from "@mui/material";
 import { createNewJoke, useJokeCategories } from "../../hooks/useJokes";
-import { useDispatch } from "react-redux";
 import { useForm } from "@tanstack/react-form";
 import { useMutation } from "@tanstack/react-query";
 
 const CreateJokePage = () => {
     const { isLoading, data } = useJokeCategories();
-
-    const dispatch = useDispatch();
 
     const mutation = useMutation({
         mutationFn: async (value: any) => {
@@ -24,7 +21,6 @@ const CreateJokePage = () => {
         onSubmit: async ({ value }) => {
             try {
                 await mutation.mutateAsync(value);
-                dispatch({ type: "ADD_JOKE", payload: value });
 
                 console.log("Joke created successfully!");
             } catch (error) {
